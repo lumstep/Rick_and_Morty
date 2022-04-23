@@ -4,7 +4,7 @@
 
 Навигация между фрагментами будет с помощью nav_graph.
 
-В активити будет поисковая строка вверху, FrameLayout, BottomNavigationView внизу.
+В активити будет поисковая строка вверху, фрагмент, BottomNavigationView внизу.
 Фрагмент вкладки содержит поисковый фильтр и список на основе Jetpack Paging.
 Фрагмент детали вкладки содержит ScrollView, floating action button.
 
