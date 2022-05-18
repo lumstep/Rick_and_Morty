@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".location.detail_info.LocationDetailInfoFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/location_detail_info_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TableLayout
+                android:id="@+id/location_detail_info_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/location_shape"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/location_grid"
+                        android:text="@string/location_name" />
+
+                    <TextView
+                        android:id="@+id/location_detail_info_name"
+                        style="@style/location_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/location_name" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/location_grid"
+                        android:text="@string/location_type" />
+
+                    <TextView
+                        android:id="@+id/location_detail_info_type"
+                        style="@style/location_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/location_type" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/location_grid"
+                        android:text="@string/location_dimension" />
+
+                    <TextView
+                        android:id="@+id/location_detail_info_dimension"
+                        style="@style/location_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/location_dimension" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/location_grid"
+                        android:text="@string/location_url" />
+
+                    <TextView
+                        android:id="@+id/location_detail_info_url"
+                        style="@style/location_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/location_url" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/location_grid"
+                        android:text="@string/location_created" />
+
+                    <TextView
+                        android:id="@+id/location_detail_info_created"
+                        style="@style/location_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/location_created" />
+                </TableRow>
+
+            </TableLayout>
+
+            <ProgressBar
+                android:id="@+id/location_detail_info_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/location_list_error_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:src="@drawable/error" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/location_list_retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:text="@string/button_retry" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/location_detail_info_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/location_detail_info_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    tools:listitem="@layout/person_item" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

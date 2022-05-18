@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/person_table_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/person_shape"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:shrinkColumns="1">
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_grid"
+            android:text="@string/person_name" />
+
+
+        <TextView
+            android:id="@+id/person_name"
+            style="@style/person_grid"
+            android:layout_weight="1"
+            tools:text="Name" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_grid"
+            android:text="@string/person_species" />
+
+        <TextView
+            android:id="@+id/person_species"
+            style="@style/person_grid"
+            android:layout_weight="1"
+            tools:text="Species" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_grid"
+            android:text="@string/person_status" />
+
+        <TextView
+            android:id="@+id/person_status"
+            style="@style/person_grid"
+            android:layout_weight="1"
+            tools:text="Status" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_grid"
+            android:text="@string/person_gender" />
+
+        <TextView
+            android:id="@+id/person_gender"
+            style="@style/person_grid"
+            android:layout_weight="1"
+            tools:text="Gender" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_grid"
+            android:layout_height="100dp"
+            android:text="@string/person_image" />
+
+        <ImageView
+            android:id="@+id/person_image"
+            style="@style/person_grid"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+    </TableRow>
+</TableLayout>

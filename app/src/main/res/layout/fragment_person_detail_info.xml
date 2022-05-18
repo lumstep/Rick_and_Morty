@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".person.detail_info.PersonDetailInfoFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/person_detail_info_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/person_detail_info_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/person_shape"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_name" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_name"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/person_name" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_species" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_species"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/person_species" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_status" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_status"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/person_status" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_type" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_type"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/person_type" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_gender" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_gender"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="Gender" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_origin"
+                        android:textColor="#795548" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_origin"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        android:textColor="@color/blue"
+                        tools:text="@string/person_origin" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_location"
+                        android:textColor="#795548" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_location"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        android:textColor="@color/blue"
+                        tools:text="@string/person_location" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_url" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_url"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/person_url" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:text="@string/person_created" />
+
+                    <TextView
+                        android:id="@+id/person_detail_info_created"
+                        style="@style/person_grid"
+                        android:layout_weight="1"
+                        tools:text="@string/person_created" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dp"
+                    android:background="@drawable/lower_line" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/person_grid"
+                        android:layout_height="100dp"
+                        android:text="@string/person_image"
+                        android:textColor="#795548" />
+
+                    <ImageView
+                        android:id="@+id/person_detail_info_image"
+                        style="@style/person_grid"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        tools:srcCompat="@drawable/ic_launcher_foreground" />
+                </TableRow>
+
+            </TableLayout>
+
+            <ProgressBar
+                android:id="@+id/person_detail_info_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/person_list_error_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/error"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/person_list_retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_retry"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/person_detail_info_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/person_detail_info_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    tools:listitem="@layout/person_episode_item" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/episode_table_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/episode_shape"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="3dp"
+    android:shrinkColumns="1">
+
+    <TableRow>
+
+        <TextView
+            style="@style/episode_grid"
+            android:text="@string/episode_name" />
+
+        <TextView
+            android:id="@+id/episode_name"
+            style="@style/episode_grid"
+            android:layout_weight="1"
+            tools:text="Name" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/episode_grid"
+            android:text="@string/episode_number" />
+
+        <TextView
+            android:id="@+id/episode_number"
+            style="@style/episode_grid"
+            android:layout_weight="1"
+            tools:text="@string/episode_number" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/episode_grid"
+            android:text="@string/episode_air_date" />
+
+        <TextView
+            android:id="@+id/episode_air_date"
+            style="@style/episode_grid"
+            android:layout_weight="1"
+            tools:text="@string/episode_air_date" />
+    </TableRow>
+</TableLayout>

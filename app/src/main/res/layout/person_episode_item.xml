@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/person_episode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/episode_shape"
+    android:padding="3dp">
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_episode_list"
+            android:text="@string/episode_name" />
+
+        <TextView
+            android:id="@+id/person_episode_name"
+            style="@style/person_episode_list"
+            android:layout_weight="1"
+            tools:text="@string/episode_name" />
+    </TableRow>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_episode_list"
+            android:text="@string/episode_number" />
+
+        <TextView
+            android:id="@+id/person_episode_number"
+            style="@style/person_episode_list"
+            android:layout_weight="1"
+            tools:text="@string/episode_number" />
+    </TableRow>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/person_episode_list"
+            android:text="@string/episode_air_date" />
+
+        <TextView
+            android:id="@+id/person_episode_air_date"
+            style="@style/person_episode_list"
+            android:layout_weight="1"
+            tools:text="@string/episode_air_date" />
+    </TableRow>
+
+</TableLayout>
