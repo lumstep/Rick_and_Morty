@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/location_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menuBackground"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/location_list_search_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                <EditText
+                    android:id="@+id/location_list_filter_edit_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/location_list_search_back_button"
+                    android:background="@null"
+                    android:hint="@string/hint_filter_name"
+                    android:paddingBottom="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/location_list_filter_edit_text_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_list_filter_edit_text_name"
+                    android:background="@null"
+                    android:hint="@string/hint_filter_type"
+                    android:paddingStart="@dimen/left_padding"
+                    android:paddingBottom="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/location_list_filter_edit_text_dimension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_list_filter_edit_text_type"
+                    android:background="@null"
+                    android:hint="@string/hint_filter_dimension"
+                    android:paddingStart="@dimen/left_padding"
+                    android:paddingBottom="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/location_list_apply_filters_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_list_filter_edit_text_dimension"
+                android:layout_centerHorizontal="true"
+                android:text="@string/button_search" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    </merge>

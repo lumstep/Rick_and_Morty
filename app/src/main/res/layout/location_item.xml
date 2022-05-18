@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_table_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/location_shape"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:shrinkColumns="1">
+
+    <TableRow>
+
+        <TextView
+            style="@style/location_grid"
+            android:text="@string/location_name" />
+
+        <TextView
+            android:id="@+id/location_name"
+            style="@style/location_grid"
+            android:layout_weight="1"
+            tools:text="Name" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/location_grid"
+            android:text="@string/location_type" />
+
+        <TextView
+            android:id="@+id/location_type"
+            style="@style/location_grid"
+            android:layout_weight="1"
+            tools:text="@string/location_type" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="@drawable/lower_line" />
+
+    <TableRow>
+
+        <TextView
+            style="@style/location_grid"
+            android:text="@string/location_dimension" />
+
+        <TextView
+            android:id="@+id/location_dimension"
+            style="@style/location_grid"
+            android:layout_weight="1"
+            tools:text="@string/location_dimension" />
+    </TableRow>
+</TableLayout>

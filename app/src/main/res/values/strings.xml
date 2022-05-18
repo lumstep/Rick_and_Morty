@@ -1,3 +1,59 @@
 <resources>
     <string name="app_name">RickAndMorty</string>
+
+    <string name="persons">Persons</string>
+    <string name="episodes">Episodes</string>
+    <string name="locations">Locations</string>
+
+    <string name="button_retry">Tap to Retry</string>
+    <string name="button_search">Search</string>
+
+    <string name="person_name">Name</string>
+    <string name="person_species">Species</string>
+    <string name="person_status">Status</string>
+    <string name="person_type">Type</string>
+    <string name="person_gender">Gender</string>
+    <string name="person_origin">Origin</string>
+    <string name="person_location">Location</string>
+    <string name="person_image">Image</string>
+    <string name="person_url">Url</string>
+    <string name="person_created">Created:</string>
+
+    <string name="episode_name">Name</string>
+    <string name="episode_number">Episode\nnumber</string>
+    <string name="episode_air_date">Air\ndate</string>
+    <string name="episode_url">Url</string>
+    <string name="episode_created">Created:</string>
+
+    <string name="location_name">Name</string>
+    <string name="location_type">Type</string>
+    <string name="location_dimension">Dimension</string>
+    <string name="location_url">Url</string>
+    <string name="location_created">Created:</string>
+
+    <string name="hint_filter_name">Enter the name for search</string>
+    <string name="hint_filter_status">Enter the status for search</string>
+    <string name="hint_filter_species">Enter the species for search</string>
+    <string name="hint_filter_type">Enter the type for search</string>
+    <string name="hint_filter_season">Choose season</string>
+    <string name="hint_filter_episode">Choose episode</string>
+    <string name="hint_filter_dimension">Enter the dimension for search</string>
+
+
+    <string-array name="person_filters_status">
+        <item>Any</item>
+        <item>Alive</item>
+        <item>Dead</item>
+        <item>unknown</item>
+    </string-array>
+
+    <string-array name="person_filters_gender">
+        <item>Any</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Genderless</item>
+        <item>unknown</item>
+    </string-array>
+
+
 </resources>
